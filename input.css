@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.testimonials {
+    background-size: 75%;
+}
+
+.quotes {
+    background-size: 18%;
+    background-position: top center;
+}
+
+@media only screen and (min-width: 80em) {
+    .testimonials {
+        /*TODO: Need revision*/
+        background-size: 45%;
+    }
+
+    .quotes {
+        /*TODO: check if it can be placed in tailwind classes*/
+        background-position: 22% 0;
+    }
+}

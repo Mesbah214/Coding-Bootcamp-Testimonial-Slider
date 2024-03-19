@@ -23,22 +23,28 @@
 <body>
 
 <main>
-    <section class="testimonials min-h-screen bg-[url('./images/pattern-curve.svg')] bg-no-repeat bg-left-bottom pb-20 lg:flex lg:flex-row-reverse lg:items-center lg:pb-0 lg:relative">
+    <section
+            class="testimonials min-h-screen bg-[url('./images/pattern-curve.svg')] bg-no-repeat bg-left-bottom pb-[4.375rem] lg:flex lg:flex-row-reverse lg:items-center lg:pb-0 lg:relative">
         <!--Images-->
-        <div class="px-6 pt-[22px] pb-[30px] lg:w-2/4 xl:pr-[72px] xl:pt-[50px] xl:pb-[55px]">
-            <div class="relative px-9 pt-8 pb-[26px] lg:flex-1 bg-[url('./images/pattern-bg.svg')] bg-contain bg-no-repeat xl:pr-[94px] xl:pt-[62px] xl:pb-[56px] xl:pl-[62px]">
+        <div class="px-6 pt-[22px] pb-[30px] lg:w-[55%] lg:pr-[5vw] lg:pt-[3.48vw] lg:pb-[3.8vw] xl:pr-[72px] xl:pt-[50px] xl:pb-[55px]">
+            <div class="relative px-[9.68vw] pt-[8.54vw] pb-[6.94vw] bg-[url('./images/pattern-bg.svg')] bg-contain bg-no-repeat lg:flex-1 lg:pl-[4.31vw] lg:pr-[6.53vw] lg:pt-[4.3vw] lg:pb-[3.89vw] xl:pr-[94px] xl:pt-[62px] xl:pb-[56px] xl:pl-[62px]">
                 <img class="shadow-2xl w-full h-auto" src="./images/image-tanya.jpg"
                      alt="a white woman with curly hair and black tops">
 
                 <!--Buttons that change slides-->
-                <div class="flex absolute left-[50%] bottom-[6px] translate-x-[-50%] lg:left-[100px] lg:translate-x-0 xl:bottom-[6%]">
-                    <button class="bg-white w-10 h-10 rounded-l-[20px] xl:w-[58px] xl:h-[56px] lg:rounded-l-[27px]" aria-label="previous slide">
-                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <!--TODO: Design button outline-->
+                <div class="flex absolute left-[50%] bottom-[4%] translate-y-[-4%] translate-x-[-50%] lg:left-[100px] lg:translate-x-0 xl:bottom-[6%]">
+                    <button class="bg-white w-10 h-10 rounded-l-[20px] md:w-[58px] md:h-[56px] lg:rounded-l-[27px]"
+                            aria-label="previous slide">
+                        <svg class="m-auto h-[.8rem]" xmlns="http://www.w3.org/2000/svg" width="12" height="18"
+                             viewBox="0 0 12 18">
                             <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/>
                         </svg>
                     </button>
-                    <button class="bg-white w-10 h-10 rounded-r-[20px] xl:w-[58px] xl:h-[56px] lg:rounded-r-[27px]" aria-label="next slide">
-                        <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                    <button class="bg-white w-10 h-10 rounded-r-[20px] md:w-[58px] md:h-[56px] lg:rounded-r-[27px]"
+                            aria-label="next slide">
+                        <svg class="m-auto h-[.8rem]" xmlns="http://www.w3.org/2000/svg" width="13" height="18"
+                             viewBox="0 0 12 18">
                             <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/>
                         </svg>
                     </button>
@@ -47,15 +53,15 @@
         </div>
 
         <!--Quotes-->
-        <div class="quotes px-9 pt-[30px] lg:flex-1 lg:mt-0 lg:absolute lg:left-0 xl:left-[50%] xl:translate-x-[-75%] xl:w-[44rem] xl:py-[74px] bg-[url('./images/pattern-quotes.svg')] bg-no-repeat">
+        <div class="quotes px-9 pt-[26px] bg-[url('./images/pattern-quotes.svg')] bg-no-repeat lg:flex-1 lg:mt-0 lg:absolute lg:w-[50%] lg:left-[50%] lg:translate-x-[-80%] xl:translate-x-[-85%] xl:w-[44rem] xl:py-[74px]">
             <blockquote class="text-center lg:text-left">
-                <p class="text-xl text-primary-gray leading-6 mb-[26px] xl:text-[32px] xl:leading-[43.2px]">
+                <p class="text-[17px] text-primary-gray leading-6 mb-4 lg:text-2xl xl:text-[32px] xl:leading-[43.2px]">
                     “ I’ve been interested in coding for a while but never taken the jump, until now.
                     I couldn’t recommend this course enough. I’m now in the job of my dreams and so
                     excited about the future. ”
                 </p>
 
-                <footer class="text-base font-bold text-dark-blue xl:text-xl">
+                <footer class="text-[15px] font-bold text-dark-blue lg:text-xl xl:text-xl">
                     Tanya Sinclair<span class="block font-medium text-grayish-blue lg:inline lg:ml-2">UX Engineer</span>
                 </footer>
 

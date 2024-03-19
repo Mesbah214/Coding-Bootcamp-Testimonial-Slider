@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/coding-bootcamp-testimonials-slider-ZOSli9eMTp)
+- Live Site URL: [vercel site](https://coding-bootcamp-testimonial-slider-bay.vercel.app/)
 
 ## My process
 

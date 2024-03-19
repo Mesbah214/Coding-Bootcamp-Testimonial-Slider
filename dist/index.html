@@ -23,25 +23,44 @@
 <body>
 
 <main>
-    <section
-            class="testimonials min-h-screen bg-[url('./images/pattern-curve.svg')] bg-no-repeat bg-left-bottom pb-[4.375rem] lg:flex lg:flex-row-reverse lg:items-center lg:pb-0 lg:relative">
+    <div class="bg-75 relative min-h-screen bg-[url('./images/pattern-curve.svg')] bg-no-repeat bg-left-bottom pb-[4.375rem] lg:bg-45 lg:flex lg:flex-row-reverse lg:items-center lg:pb-0 lg:relative">
         <!--Images-->
         <div class="px-6 pt-[22px] pb-[30px] lg:w-[55%] lg:pr-[5vw] lg:pt-[3.48vw] lg:pb-[3.8vw] xl:pr-[72px] xl:pt-[50px] xl:pb-[55px]">
-            <div class="relative px-[9.68vw] pt-[8.54vw] pb-[6.94vw] bg-[url('./images/pattern-bg.svg')] bg-contain bg-no-repeat lg:flex-1 lg:pl-[4.31vw] lg:pr-[6.53vw] lg:pt-[4.3vw] lg:pb-[3.89vw] xl:pr-[94px] xl:pt-[62px] xl:pb-[56px] xl:pl-[62px]">
-                <img class="shadow-2xl w-full h-auto" src="./images/image-tanya.jpg"
-                     alt="a white woman with curly hair and black tops">
+            <div class="carousel relative flex justify-center px-[9.68vw] pt-[8.54vw] pb-[6.94vw] bg-[url('./images/pattern-bg.svg')] bg-contain bg-no-repeat bg-center xl:bg-left lg:flex-1 lg:pl-[4.31vw] lg:pr-[6.53vw] lg:pt-[4.3vw] lg:pb-[3.89vw] xl:pr-[94px] xl:pt-[62px] xl:pb-[56px] xl:pl-[62px]">
+                <div class="carousel__frame shadow-2xl max-w-[540px] xl:max-w-full overflow-hidden">
+                    <div class="carousel__container flex w-[400%]">
+                        <div class="carousel__item">
+                            <img class="w-full h-auto" src="./images/image-john.jpg"
+                                 alt="an young man with with smile on his face wearing half-sleeve T-shirt">
+                        </div>
+                        <div class="carousel__item">
+                            <img class="shadow-2xl w-full h-auto" src="./images/image-tanya.jpg"
+                                 alt="a white woman with curly hair and black tops">
+                        </div>
+                        <div class="carousel__item">
+                            <img class="shadow-2xl w-full h-auto" src="./images/image-john.jpg"
+                                 alt="an young man with with smile on his face wearing half-sleeve T-shirt">
+                        </div>
+                        <div class="carousel__item">
+                            <img class="shadow-2xl w-full h-auto" src="./images/image-tanya.jpg"
+                                 alt="a white woman with curly hair and black tops">
+                        </div>
+                    </div>
+
+                </div>
 
                 <!--Buttons that change slides-->
-                <!--TODO: Design button outline-->
-                <div class="flex absolute left-[50%] bottom-[4%] translate-y-[-4%] translate-x-[-50%] lg:left-[100px] lg:translate-x-0 xl:bottom-[6%]">
-                    <button class="bg-white w-10 h-10 rounded-l-[20px] md:w-[58px] md:h-[56px] lg:rounded-l-[27px]"
+                <div class="flex absolute right-[50%] translate-x-[50%] lg:translate-x-[-50%] top-[92%] translate-y-[-50%] xl:left-[10rem] xl:translate-x-0 xl:right-[unset]">
+                    <button id="prev"
+                            class="bg-white w-10 h-10 rounded-l-[20px] md:w-[58px] md:h-[56px] lg:rounded-l-[27px]"
                             aria-label="previous slide">
                         <svg class="m-auto h-[.8rem]" xmlns="http://www.w3.org/2000/svg" width="12" height="18"
                              viewBox="0 0 12 18">
                             <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/>
                         </svg>
                     </button>
-                    <button class="bg-white w-10 h-10 rounded-r-[20px] md:w-[58px] md:h-[56px] lg:rounded-r-[27px]"
+                    <button id="next"
+                            class="bg-white w-10 h-10 rounded-r-[20px] md:w-[58px] md:h-[56px] lg:rounded-r-[27px]"
                             aria-label="next slide">
                         <svg class="m-auto h-[.8rem]" xmlns="http://www.w3.org/2000/svg" width="13" height="18"
                              viewBox="0 0 12 18">
@@ -49,43 +68,77 @@
                         </svg>
                     </button>
                 </div>
+
             </div>
         </div>
 
         <!--Quotes-->
-        <div class="quotes px-9 pt-[26px] bg-[url('./images/pattern-quotes.svg')] bg-no-repeat lg:flex-1 lg:mt-0 lg:absolute lg:w-[50%] lg:left-[50%] lg:translate-x-[-80%] xl:translate-x-[-85%] xl:w-[44rem] xl:py-[74px]">
-            <blockquote class="text-center lg:text-left">
-                <p class="text-[17px] text-primary-gray leading-6 mb-4 lg:text-2xl xl:text-[32px] xl:leading-[43.2px]">
-                    “ I’ve been interested in coding for a while but never taken the jump, until now.
-                    I couldn’t recommend this course enough. I’m now in the job of my dreams and so
-                    excited about the future. ”
-                </p>
+        <div class="overflow-hidden bg-[top] bg-quotes-sm pt-[26px] bg-[url('./images/pattern-quotes.svg')] bg-no-repeat lg:bg-top-left lg:bg-quotes-md lg:flex-1 lg:mt-0 lg:absolute lg:w-[50%] lg:left-[50%] lg:translate-x-[-80%] xl:bg-quotes-xl xl:translate-x-[-85%] xl:w-[44rem] xl:py-[74px]">
+            <div class="quotes__container flex w-[400%]">
+                <blockquote class="w-full px-9 text-center lg:text-left">
+                    <p class="text-[17px] text-primary-gray leading-6 mb-4 lg:text-2xl xl:text-[32px] xl:leading-[43.2px]">
+                        “ If you want to lay the best foundation possible I’d recommend taking this course.
+                        The depth the instructors go into is incredible. I now feel so confident about
+                        starting up as a professional developer. ”
+                    </p>
 
-                <footer class="text-[15px] font-bold text-dark-blue lg:text-xl xl:text-xl">
-                    Tanya Sinclair<span class="block font-medium text-grayish-blue lg:inline lg:ml-2">UX Engineer</span>
-                </footer>
+                    <footer class="text-[15px] font-bold text-dark-blue lg:text-xl xl:text-xl">
+                        John Tarkpor <span
+                            class="block font-medium text-grayish-blue lg:inline lg:ml-2">Junior Front-end Developer</span>
+                    </footer>
+                </blockquote>
 
-            </blockquote>
+                <blockquote class="w-full  px-9 text-center lg:text-left">
+                    <p class="text-[17px] text-primary-gray leading-6 mb-4 lg:text-2xl xl:text-[32px] xl:leading-[43.2px]">
+                        “ I’ve been interested in coding for a while but never taken the jump, until now.
+                        I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+                        excited about the future. ”
+                    </p>
+
+                    <footer class="text-[15px] font-bold text-dark-blue lg:text-xl xl:text-xl">
+                        Tanya Sinclair<span
+                            class="block font-medium text-grayish-blue lg:inline lg:ml-2">UX Engineer</span>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="w-full  px-9 text-center lg:text-left">
+                    <p class="text-[17px] text-primary-gray leading-6 mb-4 lg:text-2xl xl:text-[32px] xl:leading-[43.2px]">
+                        “ If you want to lay the best foundation possible I’d recommend taking this course.
+                        The depth the instructors go into is incredible. I now feel so confident about
+                        starting up as a professional developer. ”
+                    </p>
+
+                    <footer class="text-[15px] font-bold text-dark-blue lg:text-xl xl:text-xl">
+                        John Tarkpor <span
+                            class="block font-medium text-grayish-blue lg:inline lg:ml-2">Junior Front-end Developer</span>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="w-full  px-9 text-center lg:text-left">
+                    <p class="text-[17px] text-primary-gray leading-6 mb-4 lg:text-2xl xl:text-[32px] xl:leading-[43.2px]">
+                        “ I’ve been interested in coding for a while but never taken the jump, until now.
+                        I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+                        excited about the future. ”
+                    </p>
+
+                    <footer class="text-[15px] font-bold text-dark-blue lg:text-xl xl:text-xl">
+                        Tanya Sinclair<span
+                            class="block font-medium text-grayish-blue lg:inline lg:ml-2">UX Engineer</span>
+                    </footer>
+                </blockquote>
+            </div>
         </div>
-    </section>
+
+        <aside class="absolute left-2/4 bottom-0 translate-x-[-50%] bg-transparent text-xs text-center font-medium">
+            Challenge by <a class="text-blue-600 underline decoration-1"
+                            href="https://www.frontendmentor.io?ref=challenge"
+                            target="_blank">Frontend Mentor(opens in new window)</a>.
+            <span class="lg:block">Coded by <a class="text-blue-600 underline decoration-1"
+                                               href="https://www.frontendmentor.io/profile/Mesbah214">Mesbah214</a>.</span>
+        </aside>
+    </div>
+
 </main>
 
-<!--
-
-
-
-“ If you want to lay the best foundation possible I’d recommend taking this course.
-The depth the instructors go into is incredible. I now feel so confident about
-starting up as a professional developer. ”
-
-John Tarkpor
-Junior Front-end Developer
-
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor(opens in new
-    window)</a>.
-    Coded by <a href="#">Mesbah214</a>.
-</div>
--->
 </body>
 </html>

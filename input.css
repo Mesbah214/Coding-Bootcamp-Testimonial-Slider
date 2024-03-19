@@ -2,39 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.testimonials {
-    background-size: 75%;
-}
-
-.quotes {
-    /*background-size: 15%;       !* background size grows up unexpectedly in bigger screen sizes *!*/
-    background-size: 3.125rem;           /* Setting size in constant unit solves that problem */
-    background-position: top center;
-}
-
-@media only screen and (min-width: 64em) {
-    .testimonials {
-        /*TODO: Need revision*/
-        background-size: 45%;
-    }
-
-    .quotes {
-        /*TODO: check if it can be placed in tailwind classes*/
-        background-size: 4rem;
-        background-position: 22% 0;
-    }
-}
-
-@media only screen and (min-width: 80em) {
-    .testimonials {
-        /*TODO: Need revision*/
-        /*background-size: 45%;*/
-    }
-
-    .quotes {
-        /*TODO: check if it can be placed in tailwind classes*/
-        background-size: 8rem;
-        /*background-position: 22% 0;*/
+@media only screen and (min-width: 90em) {
+    .carousel {
+        padding-right: calc((100vw - 1440px) * 0.55 + 94px) !important;
     }
 }

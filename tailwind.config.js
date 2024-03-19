@@ -10,6 +10,16 @@ module.exports = {
       'bold': '700'
     },
     extend: {
+      backgroundPosition: {
+        'top-left': 'top left 22%'
+      },
+      backgroundSize: {
+        '75': '75%',
+        '45': '45%',
+        'quotes-sm': '3.125rem',
+        'quotes-md': '4rem',
+        'quotes-xl': '8rem'
+      },
       fontFamily: {
         'sans': ['"Inter"', ...defaultTheme.fontFamily.sans],
       },

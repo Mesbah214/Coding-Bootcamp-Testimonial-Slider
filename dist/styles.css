@@ -552,12 +552,20 @@ video {
   position: relative;
 }
 
-.bottom-\[4\%\] {
-  bottom: 4%;
+.bottom-0 {
+  bottom: 0px;
 }
 
-.left-\[50\%\] {
+.left-2\/4 {
   left: 50%;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.top-\[92\%\] {
+  top: 92%;
 }
 
 .m-auto {
@@ -596,8 +604,16 @@ video {
   width: 2.5rem;
 }
 
+.w-\[400\%\] {
+  width: 400%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-\[540px\] {
+  max-width: 540px;
 }
 
 .translate-x-\[-50\%\] {
@@ -605,9 +621,22 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[-4\%\] {
-  --tw-translate-y: -4%;
+.translate-x-\[50\%\] {
+  --tw-translate-x: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-50\%\] {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-l-\[20px\] {
@@ -618,6 +647,10 @@ video {
 .rounded-r-\[20px\] {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
@@ -637,8 +670,24 @@ video {
   background-image: url('./images/pattern-quotes.svg');
 }
 
+.bg-75 {
+  background-size: 75%;
+}
+
 .bg-contain {
   background-size: contain;
+}
+
+.bg-quotes-sm {
+  background-size: 3.125rem;
+}
+
+.bg-\[top\] {
+  background-position: top;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-left-bottom {
@@ -700,6 +749,11 @@ video {
   font-size: 17px;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -710,6 +764,11 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-dark-blue {
@@ -726,46 +785,23 @@ video {
   color: hsla(250, 9%, 40%, 1);
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.testimonials {
-  background-size: 75%;
-}
-
-.quotes {
-  /*background-size: 15%;       !* background size grows up unexpectedly in bigger screen sizes *!*/
-  background-size: 3.125rem;
-  /* Setting size in constant unit solves that problem */
-  background-position: top center;
-}
-
-@media only screen and (min-width: 64em) {
-  .testimonials {
-    /*TODO: Need revision*/
-    background-size: 45%;
-  }
-
-  .quotes {
-    /*TODO: check if it can be placed in tailwind classes*/
-    background-size: 4rem;
-    background-position: 22% 0;
-  }
-}
-
-@media only screen and (min-width: 80em) {
-  .testimonials {
-    /*TODO: Need revision*/
-    /*background-size: 45%;*/
-  }
-
-  .quotes {
-    /*TODO: check if it can be placed in tailwind classes*/
-    background-size: 8rem;
-    /*background-position: 22% 0;*/
+@media only screen and (min-width: 90em) {
+  .carousel {
+    padding-right: calc((100vw - 1440px) * 0.55 + 94px) !important;
   }
 }
 
@@ -788,14 +824,6 @@ video {
     position: relative;
   }
 
-  .lg\:left-0 {
-    left: 0px;
-  }
-
-  .lg\:left-\[100px\] {
-    left: 100px;
-  }
-
   .lg\:left-\[50\%\] {
     left: 50%;
   }
@@ -806,6 +834,10 @@ video {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:inline {
@@ -828,13 +860,8 @@ video {
     flex: 1 1 0%;
   }
 
-  .lg\:translate-x-0 {
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:translate-x-\[-85\%\] {
-    --tw-translate-x: -85%;
+  .lg\:translate-x-\[-50\%\] {
+    --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -859,6 +886,18 @@ video {
   .lg\:rounded-r-\[27px\] {
     border-top-right-radius: 27px;
     border-bottom-right-radius: 27px;
+  }
+
+  .lg\:bg-45 {
+    background-size: 45%;
+  }
+
+  .lg\:bg-quotes-md {
+    background-size: 4rem;
+  }
+
+  .lg\:bg-top-left {
+    background-position: top left 22%;
   }
 
   .lg\:pb-0 {
@@ -909,21 +948,38 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:bottom-\[6\%\] {
-    bottom: 6%;
+  .xl\:left-\[10rem\] {
+    left: 10rem;
   }
 
-  .xl\:left-\[50\%\] {
-    left: 50%;
+  .xl\:right-\[unset\] {
+    right: unset;
   }
 
   .xl\:w-\[44rem\] {
     width: 44rem;
   }
 
+  .xl\:max-w-full {
+    max-width: 100%;
+  }
+
+  .xl\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .xl\:translate-x-\[-85\%\] {
     --tw-translate-x: -85%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:bg-quotes-xl {
+    background-size: 8rem;
+  }
+
+  .xl\:bg-left {
+    background-position: left;
   }
 
   .xl\:py-\[74px\] {

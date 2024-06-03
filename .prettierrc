@@ -1,0 +1,22 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "useTabs": false,
+    "singleQuote": true,
+    "semi": false,
+    "overrides": [
+        {
+            "files": "*.html",
+            "options": {
+                "printWidth": 3000,
+                "bracketSpacing": false,
+                "htmlWhitespaceSensitivity": "css",
+                "preferVoidTags": false
+            }
+        }
+    ],
+    "plugins": [
+        "prettier-plugin-tailwindcss",
+        "@awmottaz/prettier-plugin-void-html"
+    ]
+}
